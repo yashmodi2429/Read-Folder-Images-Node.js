@@ -1,0 +1,22 @@
+html
+   head
+     script(type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+      style(type='text/css').
+         .img-width {
+            height:27%;
+            width: 24%;
+            border-width:5px;
+            border-style:groove;
+         }
+         .setting {
+            display: inline;
+         }
+body
+   h1 Images From IMG Folder
+   each img in images
+      div.setting
+        img.img-width(src="/#{img}", alt="IMG folder images")
+        
+//- This file iterate over the images present in IMG folder
+            
+             
